@@ -1,0 +1,16 @@
+.hero
+    min-height: 95vh
+    background: url(".././images/bg-pattern-intro-mobile.svg"), linear-gradient(-30deg, hsl(353, 100%, 62%) 0%, hsl(13, 100%, 72%) 100%)
+    background-repeat: no-repeat
+    background-position: 37% 38%
+    border-radius: 0 0 0 100px
+    &__text
+        &__tittle
+            @include font-size(3.5rem)
+            @media (min-width: 360px)
+                @include font-size(4rem)
+        &__buttons
+            margin-top: 40px
+            &__btn
+                background-color: white
+                color: hsla(353, 100%, 62%, .9)

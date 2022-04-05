@@ -1,0 +1,26 @@
+.info
+    background-color: hsl(237, 23%, 27%)
+    border-radius: 0 100px 0 100px
+    position: relative
+    margin-top: 140px
+    color: hsl(240, 2%, 85%)
+    background-image: url('.././images/bg-pattern-circles.svg')
+    background-repeat: no-repeat
+    background-size: 160%
+    background-position: center top -210px
+    &__img
+        position: absolute
+        left: 0
+        top: -26%
+        @media (min-height: 800px) and (orientation: portrait)
+            top: -30%
+    &__texts
+        padding-top: 200px
+        @media (min-height: 640px) and (orientation: portrait)
+            padding-top: 240px
+        @media (min-height: 840px) and (orientation: portrait)
+            padding-top: 260px
+        @media (min-height: 896px) and (orientation: portrait)
+            padding-top: 280px
+        &__tittle
+            @include font-size(3.7rem)
