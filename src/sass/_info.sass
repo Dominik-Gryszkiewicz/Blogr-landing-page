@@ -1,26 +1,60 @@
 .info
     background-color: hsl(237, 23%, 27%)
     border-radius: 0 100px 0 100px
-    position: relative
-    margin-top: 140px
+    margin-top: 120px
     color: hsl(240, 2%, 85%)
     background-image: url('.././images/bg-pattern-circles.svg')
     background-repeat: no-repeat
-    background-size: 160%
-    background-position: center top -210px
+    background-size: 150%
+    background-position: center top -190px
+    @media (min-height: 640px) and (orientation: portrait)
+        background-position: center top -210px
+    @media (min-height: 844px) and (orientation: portrait)
+        background-position: center top -230px
+        margin-top: 150px
+        margin-bottom: 30px
+    @media (min-height: 960px) and (orientation: portrait)
+        background-position: center top -420px
+    @media (min-height: 1024px) and (orientation: portrait)
+        background-position: center top -600px
+        margin-top: 230px
+    @media (min-width: 1200px)
+        margin-top: 150px
+        background-size: 80%
+        background-position: left -100% top 85%
+        position: relative
+    @media (min-width: 1600px)
+        margin-top: 200px
     &__img
-        position: absolute
-        left: 0
-        top: -26%
-        @media (min-height: 800px) and (orientation: portrait)
-            top: -30%
+        transform: translateY(-45%)
+        width: auto
+        margin: 0 auto
+        @media (min-width: 1280px)
+            transform: translateY(0)
+            position: absolute
+            left: 0
+            top: -27%
+        @media (min-width: 1440px)
+            top: -20%
+            left: 5%
+        @media (min-width: 1600px)
+            top: -20%
+        @media (min-width: 1920px)
+            left: 12%
+
     &__texts
-        padding-top: 200px
+        margin-top: -130px
         @media (min-height: 640px) and (orientation: portrait)
-            padding-top: 240px
-        @media (min-height: 840px) and (orientation: portrait)
-            padding-top: 260px
-        @media (min-height: 896px) and (orientation: portrait)
-            padding-top: 280px
+            margin-top: -140px
+        @media (min-height: 844px) and (orientation: portrait)
+            margin-top: -170px
+        @media (min-height: 960px) and (orientation: portrait)
+            margin-top: -250px
+        @media (min-width: 768px)
+            @include font-size(1.3rem)
+        @media (min-width: 1280px)
+            margin-top: 0
         &__tittle
-            @include font-size(3.7rem)
+            @include font-size(3rem)
+            @media (min-width: 1280px)
+                @include font-size(2.2rem)

@@ -1,0 +1,18 @@
+.section__content
+    @media (min-width: 1200px)
+        padding-top: 100px!important
+        padding-bottom: 300px
+    img
+        transform: scale(1.4)
+        @media (min-height: 1024px) and (orientation: portrait)
+            transform: scale(1.7)
+        @media (min-width: 1200px)
+            transform: scale(2) translate(-20%, 4%)
+        @media (min-width: 1440px)
+            transform: scale(2) translate(-20%, 6%)
+    h3
+        @media (min-width: 768px)
+            @include font-size(2.5rem)
+    p
+        @media (min-width: 768px)
+            @include font-size(1.3rem)

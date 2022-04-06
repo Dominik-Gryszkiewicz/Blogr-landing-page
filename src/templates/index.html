@@ -47,69 +47,91 @@
           </div>
         </div>
       </nav>
-      <header class="hero row justify-content-center align-items-center text-white mb-5 gx-0">
-        <div class="hero__text text-center px-2">
-          <h1 class="hero__text__tittle mb-0 fw-bold lh-base">A modern publishing platform</h1>
-          <p class="px-3">Grow your audience and build your online brand</p>
-          <div class="hero__text__buttons d-flex justify-content-center align-items-center">
-              <a href="#" class="hero__text__buttons__btn text-decoration-none border border-2 rounded-pill py-2 px-3 fw-bold">Start for Free</a>
-              <a href="#" class="text-decoration-none text-white border border-2 rounded-pill py-2 px-3 ms-3 fw-bold">Learn More</a>
+      <header class="hero d-flex justify-content-center align-items-center text-white mb-5">
+        <div class="container">
+          <div class="hero__text text-center px-md-5">
+            <h1 class="hero__text__tittle mb-0 fw-bold lh-base">A modern publishing platform</h1>
+            <p class="hero__text__description px-3 mt-md-3 my-xl-0">Grow your audience and build your online brand</p>
+            <div class="hero__text__buttons d-flex justify-content-center align-items-center">
+                <a href="#" class="hero__text__buttons__btn text-decoration-none border border-2 rounded-pill py-2 px-3 fw-bold">Start for Free</a>
+                <a href="#" class="text-decoration-none text-white border border-2 rounded-pill py-2 px-3 ms-3 fw-bold">Learn More</a>
+            </div>
           </div>
         </div>
       </header>
-      <main class="py-5 text-center row flex-column justify-content-center gx-0">
-          <h2 class="fw-bold h1">Designed for the future</h2>
-          <div class="main__content mb-5">
-            <img src="./images/illustration-editor-mobile.svg" alt="editor" class="img-fluid my-5">
-            <div class="main__content__texts px-4">
-                <h3 class="fw-bold h2 px-3">Introducing an extensible editor</h3>
-                <p class="mt-4">Blogr features an exceedingly intuitive interface which lets you focus on one thing: creating content. The editor supports management of multiple blogs and allows easy manipulation of embeds such as images, videos, and Markdown. Extensibility with plugins and themes provide easy ways to add functionality or change the looks of a blog.</p>
+      <main class="py-5 pt-xl-4-5 pb-xl-0 text-center d-flex flex-column justify-content-center">
+        <div class="container">
+          <h2 class="fw-bold h1 mb-4 mb-md-5 pb-xl-2 mt-md-4 my-xl-5">Designed for the future</h2>
+          <div class="main__content row align-items-xl-center">
+            <picture class="col-xl-6 order-xl-2">
+              <source srcset="./images/illustration-editor-desktop.svg" media="(min-width: 1200px)">
+              <img src="./images/illustration-editor-mobile.svg" alt="editor" class="my-4 my-md-5 py-md-5 my-xl-0 py-zl-0 img-fluid">
+            </picture>
+            <div class="main__content__texts text-xl-start px-4 px-sm-5 px-xl-0 mb-sm-5 mt-md-3 col-xl-6">
+                <h3 class="fw-bold h2 mt-4 px-3 px-xl-0">Introducing an extensible editor</h3>
+                <p class="mt-3">Blogr features an exceedingly intuitive interface which lets you focus on one thing: creating content. The editor supports management of multiple blogs and allows easy manipulation of embeds such as images, videos, and Markdown. Extensibility with plugins and themes provide easy ways to add functionality or change the looks of a blog.</p>
                 <h3 class="fw-bold h2 mt-5">Robust content management</h3>
-                <p class="mt-4">Flexible content management enables users to easily move through posts. Increase the usability of your blog by adding customized categories, sections, format, or flow. With this functionality, you’re in full control.</p>
+                <p class="mt-3 mb-5 mb-xl-0 pb-sm-5 pb-md-5 pb-xl-0">Flexible content management enables users to easily move through posts. Increase the usability of your blog by adding customized categories, sections, format, or flow. With this functionality, you’re in full control.</p>
             </div>
           </div>
+        </div>
       </main>
-      <section class="info text-center">
-        <img src="./images/illustration-phones.svg" alt="phones" class="img-fluid info__img">
-        <div class="info__texts px-4 pb-5">
-            <h4 class="info__texts__tittle fw-bold lh-base text-white">State of the Art Infrastructure</h4>
-            <p class="mt-3 pb-5">With reliability and speed in mind, worldwide data centers provide the backbone for ultra-fast connectivity. This ensures your site will load instantly, no matter where your readers are, keeping your site competitive.</p>
+      <section class="info text-center text-xl-start mb-sm-5">
+        <div class="container">
+          <div class="row align-items-xl-center justify-content-xl-end">
+            <img src="./images/illustration-phones.svg" alt="phones" class="img-fluid info__img col-xl-6">
+            <div class="info__texts px-4 px-sm-5 pb-5 px-xl-0 py-xl-5 col-xl-6">
+                <h4 class="info__texts__tittle fw-bold lh-base text-white pt-xl-5">State of the Art Infrastructure</h4>
+                <p class="mt-3 pb-4 pb-xl-5">With reliability and speed in mind, worldwide data centers provide the backbone for ultra-fast connectivity. This ensures your site will load instantly, no matter where your readers are, keeping your site competitive.</p>
+            </div>
+          </div>
         </div>
       </section>
       <section>
-        <div class="section__content text-center">
-            <img src="./images/illustration-laptop-mobile.svg" alt="laptop" class="img-fluid my-5">
-            <div class="section__content__texts px-4 mb-5">
-                <h3 class="fw-bold">Free, open, simple</h3>
+        <div class="container">
+          <div class="section__content row text-center text-xl-start align-items-xl-end justify-content-between pt-md-5">
+            <picture class="col-xl-6">
+              <source srcset="./images/illustration-laptop-desktop.svg" media="(min-width: 1200px)">
+              <img src="./images/illustration-laptop-mobile.svg" alt="laptop" class="img-fluid mt-5 mb-4 mb-sm-5 py-5">
+            </picture>
+            <div class="section__content__texts px-4 px-sm-5 px-xl-0 ps-xl-5 pb-md-3 mb-5 mt-sm-3 mt-md-5 mb-xl-0 col-xl-6">
+                <h3 class="fw-bold h2">Free, open, simple</h3>
                 <p class="mt-4">Blogr is a free and open source application backed by a large community of helpful developers. It supports features such as code syntax highlighting, RSS feeds, social media integration, third-party commenting tools, and works seamlessly with Google Analytics. The architecture is clean and is relatively easy to learn.</p>
-                <h3 class="fw-bold mt-5">Powerful tooling</h3>
-                <p class="mt-4 pb-5">Batteries included. We built a simple and straightforward CLI tool that makes customization and deployment a breeze, butcapable of producing even the most complicated sites.</p>
+                <h3 class="fw-bold h2 mt-5">Powerful tooling</h3>
+                <p class="mt-4 pb-4 pb-xl-0 mb-xl-0">Batteries included. We built a simple and straightforward CLI tool that makes customization and deployment a breeze, butcapable of producing even the most complicated sites.</p>
             </div>
           </div>
+        </div>
       </section>
-      <footer class="text-center pb-1">
-          <img src="./images/logo.svg" alt="logo" class="my-5 pt-3">
-          <ul class="list--product list-unstyled">
-              <h4 class="text-white my-4">Product</h4>
-              <li>Overview</li>
-              <li class="mt-1">Pricing</li>
-              <li class="mt-1">Marketplace</li>
-              <li class="mt-1">Features</li>
-              <li class="mt-1">Integrations</li>
-          </ul>
-          <ul class="list--company list-unstyled mt-5">
-            <h4 class="text-white my-4">Company</h4>
-            <li>About</li>
-            <li class="mt-1">Team</li>
-            <li class="mt-1">Blog</li>
-            <li class="mt-1">Careers</li>
-        </ul>
-        <ul class="list--connect list-unstyled mt-5 pb-5">
-            <h4 class="text-white my-4">Connect</h4>
-            <li>Contact</li>
-            <li class="mt-1">Newsletter</li>
-            <li class="mt-1">LinkedIn</li>
-        </ul>
+      <footer class="text-center text-md-start pb-1">
+        <div class="container">
+          <div class="d-md-flex align-items-start">
+            <img src="./images/logo.svg" alt="logo" class="my-5 pt-3 pt-md-0">
+            <div class="row align-items-md-baseline justify-content-md-end pb-sm-5 flex-grow-1">
+              <ul class="list--product list-unstyled col-12 col-sm-4 col-md-3 mt-md-5">
+                <h4 class="text-white my-4 mt-sm-0">Product</h4>
+                <li>Overview</li>
+                <li class="mt-1">Pricing</li>
+                <li class="mt-1">Marketplace</li>
+                <li class="mt-1">Features</li>
+                <li class="mt-1">Integrations</li>
+              </ul>
+              <ul class="list--company list-unstyled col-12 col-sm-4 col-md-3 mt-4 mt-sm-0 mt-md-5">
+                <h4 class="text-white my-4 mt-sm-0">Company</h4>
+                <li>About</li>
+                <li class="mt-1">Team</li>
+                <li class="mt-1">Blog</li>
+                <li class="mt-1">Careers</li>
+              </ul>
+              <ul class="list--connect list-unstyled col-12 col-sm-4 col-md-3 mt-4 mt-sm-0 mt-md-5 pb-5">
+                <h4 class="text-white my-4 mt-sm-0">Connect</h4>
+                <li>Contact</li>
+                <li class="mt-1">Newsletter</li>
+                <li class="mt-1">LinkedIn</li>
+              </ul>
+            </div>
+          </div>  
+        </div>
       </footer>
 </body>
 </html>
