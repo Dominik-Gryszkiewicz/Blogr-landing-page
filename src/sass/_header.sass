@@ -20,9 +20,19 @@
             @media (min-width: 768px)
                 @include font-size(1.3rem)
         &__buttons
+            font-size: 15px
             margin-top: 40px
             @media (min-width: 768px)
-                @include font-size(1.1rem)
-            &__btn
+                @include font-size(1rem)
+            &__btn:hover
+                background-color: white
+                color: hsla(353, 100%, 62%, .9)!important
+                transition: .1s linear
+            &__active
                 background-color: white
                 color: hsla(353, 100%, 62%, .9)
+                border: none!important
+                &:hover
+                    color: white
+                    background-color: rgba(256, 256, 256, 0.2)
+                    transition: .1s linear

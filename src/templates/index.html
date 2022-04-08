@@ -11,39 +11,71 @@
     <title>Blogr landing page</title>
 </head>
 <body>
-    <nav class="navbar navbar-expand-md navbar-dark fixed-top">
+    <nav class="navbar navbar-expand-md fixed-top py-4">
         <div class="container">
-          <a class="navbar-brand" href="#"><img src="./images/logo.svg" alt="logo" class="img-fluid navbar-brand__img"></a>
+          <a class="navbar-brand" href="#"><img src="./images/logo.svg" alt="logo" class="img-fluid navbar-brand__img ms-2 ms-md-0"></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
+          <div class="collapse navbar-collapse mt-4 mt-md-0 mx-2" id="navbarSupportedContent">
+            <ul class="navbar-nav nav-first me-auto mb-2 mb-lg-0">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle me-md-3" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Product
+                <picture>
+                  <source srcset="../images/icon-arrow-dark.svg" media="(max-width: 768px)">
+                  <img src="../images/icon-arrow-light.svg" alt="arrow" class="ms-md-1">
+                </picture>
+                </a>
+                <ul class="dropdown-menu py-md-3" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Overview</a></li>
+                  <li><a class="dropdown-item" href="#">Pricing</a></li>
+                  <li><a class="dropdown-item" href="#">Marketplace</a></li>
+                  <li><a class="dropdown-item" href="#">Features</a></li>
+                  <li><a class="dropdown-item" href="#">Integrations</a></li>
+                </ul>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle me-md-3" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Company
+                <picture>
+                  <source srcset="../images/icon-arrow-dark.svg" media="(max-width: 768px)">
+                  <img src="../images/icon-arrow-light.svg" alt="arrow" class="ms-md-1">
+                </picture>
+                </a>
+                <ul class="dropdown-menu py-md-3" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">About</a></li>
+                  <li><a class="dropdown-item" href="#">Team</a></li>
+                  <li><a class="dropdown-item" href="#">Blog</a></li>
+                  <li><a class="dropdown-item" href="#">Careers</a></li>
+                </ul>
               </li>
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Dropdown
+                  Connect
+                <picture>
+                  <source srcset="../images/icon-arrow-dark.svg" media="(max-width: 768px)">
+                  <img src="../images/icon-arrow-light.svg" alt="arrow" class="ms-md-1">
+                </picture>
                 </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                <ul class="dropdown-menu py-md-3" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Contact</a></li>
+                  <li><a class="dropdown-item" href="#">Newsletter</a></li>
+                  <li><a class="dropdown-item" href="#">LinkedIn</a></li>
                 </ul>
               </li>
+            </ul>
+
+            <ul class="navbar-nav nav-second ms-auto mb-2 mb-lg-0">
+              <li class="divider"><hr class="dropdown-divider"></li>
               <li class="nav-item">
-                <a class="nav-link disabled">Disabled</a>
+                <a class="nav-link login fw-bold" aria-current="page" href="#">Login</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link sign rounded-pill ms-md-4 fw-bold" href="#">Sign Up</a>
               </li>
             </ul>
-            <form class="d-flex">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Search</button>
-            </form>
+            
           </div>
         </div>
       </nav>
@@ -53,8 +85,8 @@
             <h1 class="hero__text__tittle mb-0 fw-bold lh-base">A modern publishing platform</h1>
             <p class="hero__text__description px-3 mt-md-3 my-xl-0">Grow your audience and build your online brand</p>
             <div class="hero__text__buttons d-flex justify-content-center align-items-center">
-                <a href="#" class="hero__text__buttons__btn text-decoration-none border border-2 rounded-pill py-2 px-3 fw-bold">Start for Free</a>
-                <a href="#" class="text-decoration-none text-white border border-2 rounded-pill py-2 px-3 ms-3 fw-bold">Learn More</a>
+                <a href="#" class="hero__text__buttons__active text-decoration-none border border-2 rounded-pill py-2 px-3 fw-bold">Start for Free</a>
+                <a href="#" class="hero__text__buttons__btn text-decoration-none text-white border border-2 rounded-pill py-2 px-3 ms-3 fw-bold">Learn More</a>
             </div>
           </div>
         </div>
@@ -108,7 +140,7 @@
           <div class="d-md-flex align-items-start">
             <img src="./images/logo.svg" alt="logo" class="my-5 pt-3 pt-md-0">
             <div class="row align-items-md-baseline justify-content-md-end pb-sm-5 flex-grow-1">
-              <ul class="list--product list-unstyled col-12 col-sm-4 col-md-3 mt-md-5">
+              <ul class="list list-unstyled col-12 col-sm-4 col-md-3 mt-md-5">
                 <h4 class="text-white my-4 mt-sm-0">Product</h4>
                 <li>Overview</li>
                 <li class="mt-1">Pricing</li>
@@ -116,14 +148,14 @@
                 <li class="mt-1">Features</li>
                 <li class="mt-1">Integrations</li>
               </ul>
-              <ul class="list--company list-unstyled col-12 col-sm-4 col-md-3 mt-4 mt-sm-0 mt-md-5">
+              <ul class="list list-unstyled col-12 col-sm-4 col-md-3 mt-4 mt-sm-0 mt-md-5">
                 <h4 class="text-white my-4 mt-sm-0">Company</h4>
                 <li>About</li>
                 <li class="mt-1">Team</li>
                 <li class="mt-1">Blog</li>
                 <li class="mt-1">Careers</li>
               </ul>
-              <ul class="list--connect list-unstyled col-12 col-sm-4 col-md-3 mt-4 mt-sm-0 mt-md-5 pb-5">
+              <ul class="list list-unstyled col-12 col-sm-4 col-md-3 mt-4 mt-sm-0 mt-md-5 pb-5">
                 <h4 class="text-white my-4 mt-sm-0">Connect</h4>
                 <li>Contact</li>
                 <li class="mt-1">Newsletter</li>
