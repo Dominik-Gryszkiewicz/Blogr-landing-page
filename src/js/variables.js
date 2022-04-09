@@ -1,0 +1,7 @@
+export const navbar = document.querySelector('.navbar')
+export const icon = document.querySelector('.navbar-toggler-icon')
+export const navLinks = document.querySelectorAll('.nav-first .nav-link')
+export const offerSection = document.querySelector('.offer')
+export const infoSection = document.querySelector('.info .row')
+export const advantagesSection = document.querySelector('.advantages')
+export const logo = document.querySelector('footer img')
